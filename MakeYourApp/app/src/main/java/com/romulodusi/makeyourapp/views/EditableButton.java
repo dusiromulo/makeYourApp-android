@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout.LayoutParams;
 
+import com.romulodusi.makeyourapp.R;
 import com.romulodusi.makeyourapp.activities.ScreenActivity;
 import com.romulodusi.makeyourapp.utils.ChangebleView;
 
@@ -19,20 +20,13 @@ public class EditableButton extends Button implements ChangebleView {
         super(context);
         this.screenActivity = (ScreenActivity) context;
         this.setOnTouchListener(this);
+        this.setText(context.getString(R.string.example));
+
+        lp = new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
     }
 
     public void toggleMovement(boolean enabled) {
         movEnabled = enabled;
-    }
-
-    public EditableButton(Context context, String label) {
-        super(context);
-        this.screenActivity = (ScreenActivity) context;
-        this.setOnTouchListener(this);
-        this.setText(label);
-
-        lp = new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
-
     }
 
     public void renameElement(String newName) {
@@ -53,7 +47,6 @@ public class EditableButton extends Button implements ChangebleView {
             screenActivity.notifyElementActionDown(this);
         }
         else if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-            Log.i("BUTTON", "ACTION UP");
             screenActivity.notifyElementActionUp(this);
         }
         else if (motionEvent.getAction() == MotionEvent.ACTION_MOVE) {
