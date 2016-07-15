@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/add_item"
+        android:title="@string/add_item"/>
+
+    <item android:id="@+id/reposition"
+        android:title="@string/reposition" />
+
+    <item android:id="@+id/remove_item"
+        android:title="@string/remove_item" />
+
+    <item android:id="@+id/rename_item"
+        android:title="@string/rename_item" />
+
+    <item android:id="@+id/remove_all_items"
+        android:title="@string/remove_all_items" />
+</menu>

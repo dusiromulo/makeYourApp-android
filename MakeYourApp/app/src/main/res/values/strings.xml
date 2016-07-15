@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MakeYourApp</string>
+
+    <string name="create_project">Criar novo projeto</string>
+    <string name="open_project">Abrir projeto existente</string>
+    <string name="create_screen">Criar tela</string>
+    <string name="project_name">Nome do projeto</string>
+    <string name="tell_project_name">Informe o nome do projeto:</string>
+    <string name="confirm">Confirmar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="add_item">Adicionar elemento</string>
+    <string name="reposition">Reposicionar</string>
+    <string name="remove_item">Remover elemento</string>
+    <string name="rename_item">Renomear elemento</string>
+    <string name="remove_all_items">Remover tudo</string>
+
+    <string name="new_text">Novo texto</string>
+    <string name="tell_new_text">Informe o novo texto:</string>
+
+</resources>
